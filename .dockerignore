@@ -1,0 +1,10 @@
+.git
+.gitignore
+.dumate
+.venv
+__pycache__
+*.pyc
+dist
+!dist/
+README.md
+*.zip

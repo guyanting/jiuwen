@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>今日旧闻 · 分享图</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{width:1200px;height:630px;overflow:hidden;}
+  body{
+    font-family:"Songti SC","STSong","SimSun","Noto Serif CJK SC",serif;
+    color:#221d19;
+    background-color:#efe7d6;
+    background-image:
+      radial-gradient(115% 70% at 50% -10%, rgba(255,255,255,.72), rgba(255,255,255,0) 62%),
+      repeating-linear-gradient(0deg, rgba(122,100,66,.05) 0 1px, rgba(0,0,0,0) 1px 3px),
+      repeating-linear-gradient(90deg, rgba(122,100,66,.035) 0 1px, rgba(0,0,0,0) 1px 4px);
+    padding:44px 64px 40px;
+    display:flex;
+    flex-direction:column;
+  }
+  .top{
+    display:flex;justify-content:space-between;align-items:baseline;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:15px;letter-spacing:.22em;color:#807568;
+    border-top:3px solid #221d19;border-bottom:1px solid #c9bba0;
+    padding:10px 2px 9px;
+  }
+  .title{
+    font-size:132px;font-weight:700;line-height:1.02;letter-spacing:.1em;
+    text-indent:.1em;text-align:center;margin-top:26px;
+  }
+  .sub{
+    text-align:center;font-size:26px;letter-spacing:.24em;color:#4b433a;margin-top:14px;
+  }
+  .rule{height:6px;border-top:1px solid #221d19;border-bottom:1px solid #221d19;margin:26px 0 0;}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:26px;}
+  .col h2{
+    font-size:22px;letter-spacing:.16em;font-weight:700;
+    border-bottom:2px solid #221d19;padding-bottom:8px;
+  }
+  .col li{
+    list-style:none;font-size:20px;line-height:1.6;color:#4b433a;
+    padding:9px 0 9px 34px;position:relative;border-bottom:1px solid #d9cdb6;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .col li span{
+    position:absolute;left:0;top:9px;
+    font-family:Georgia,serif;font-size:19px;color:#9c2b22;
+  }
+  .bottom{
+    margin-top:auto;
+    display:flex;justify-content:space-between;align-items:center;
+    border-top:1px solid #a3927a;padding-top:14px;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:17px;letter-spacing:.12em;color:#807568;
+  }
+  .stamp{color:#9c2b22;}
+</style>
+</head>
+<body>
+  <div class="top">
+    <span>每 日 一 期</span>
+    <span>国 际 · 国 内</span>
+    <span>条 条 有 出 处</span>
+  </div>
+
+  <div class="title">今日旧闻</div>
+  <div class="sub">一百年前的今天，报上写着这些</div>
+  <div class="rule"></div>
+
+  <div class="cols">
+    <div class="col">
+      <h2>国际新闻</h2>
+      <ul>
+        <li><span>01</span>法西斯议会清空反对派议席</li>
+        <li><span>02</span>意共领袖葛兰西被捕入狱</li>
+        <li><span>03</span>英国煤矿停工第七个月</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>国内新闻</h2>
+      <ul>
+        <li><span>01</span>北伐军攻克南昌</li>
+        <li><span>02</span>北伐军占领九江</li>
+        <li><span>03</span>湘鄂赣工农运动高涨</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <span>按日回溯整整一百年 · 逐条注明日期、地点与资料来源</span>
+    <span class="stamp">每 版 至 多 十 则</span>
+  </div>
+</body>
+</html>

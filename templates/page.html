@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="{{THEME_COLOR}}">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+{{SEO_CANONICAL}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{SITE_NAME}}">
+<meta property="og:locale" content="{{LOCALE}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+{{SEO_OG_URL}}
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="{{FAVICON}}" type="image/svg+xml">
+<style>
+{{STYLES}}
+</style>
+<script type="application/ld+json">
+{{JSONLD}}
+</script>
+</head>
+<body data-issue-no="{{ISSUE_NO_TEXT}}" data-updated-at="{{UPDATED_AT}}" data-site-name="{{SITE_NAME}}" data-max-items="{{MAX_ITEMS}}" data-site-url="{{CANONICAL}}">
+<a class="skip-link" href="#content">跳到正文</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="masthead__meta">
+      <span id="metaIssue">第 {{ISSUE_NO_TEXT}} 期</span>
+      <span id="metaEra">{{ERA_TEXT}}</span>
+      <span id="metaTotal">全页{{TOTAL_COUNT_TEXT}}</span>
+    </div>
+
+    <h1 class="masthead__title">{{SITE_NAME}}</h1>
+    <p class="masthead__sub">一百年前的今天，报上写着这些</p>
+
+    <div class="masthead__rule" aria-hidden="true"></div>
+
+    <div class="dateline">
+      <span class="dateline__date" id="dateText">{{TARGET_DATE_TEXT}}</span>
+      <span class="dateline__week" id="dateWeek">{{TARGET_WEEK}}</span>
+      <p class="dateline__gap">今日 <span id="todayText">{{TODAY_DATE_TEXT}}</span> · 相隔<b>整整一百年</b></p>
+    </div>
+  </header>
+
+  <section class="lead" aria-label="编者按">
+    <span class="lead__label">编 者 按</span>
+    <p id="leadText">{{LEAD_TEXT}}</p>
+  </section>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist" aria-label="新闻版块" id="tabs">
+{{TABS}}
+    </div>
+  </div>
+
+  <main id="content">
+{{SECTIONS}}
+  </main>
+
+  <section class="colophon" aria-label="编辑说明">
+    <h2>编辑说明</h2>
+    <ol id="colophon">
+{{COLOPHON}}
+    </ol>
+  </section>
+
+  <div class="foot">
+    <span id="footLeft">{{FOOT_LEFT}}</span>
+    <span id="footRight">{{FOOT_RIGHT}}</span>
+  </div>
+
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">回顶</button>
+
+<script>
+{{SCRIPT}}
+</script>
+</body>
+</html>

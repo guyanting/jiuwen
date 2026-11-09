@@ -1,0 +1,9 @@
+{
+  "siteName": "今日旧闻",
+  "siteUrl": "",
+  "description": "一百年前的今天，报纸上写着这些：按日回溯一百年，收录当日见报的国际与国内要闻，每条注明日期、地点与可查证来源。",
+  "lang": "zh-CN",
+  "locale": "zh_CN",
+  "themeColor": "#efe7d6",
+  "maxItemsPerSection": 10
+}
